@@ -98,13 +98,9 @@ const Menu = () => {
       {/* Navigation tabs for switching between cocktails */}
       <nav className="cocktail-tabs" aria-label="Cocktail Navigation">
         {allCocktails.map((cocktail, index) => {
-          const isActive = index === currentIndex; // Checks if this cocktail is currently active
+          const isActive = index === currentIndex;
           return (
-            <button
-              key={cocktail.id}
-              className={`${isActive ? "text-white border-white" : "text-white/50 border-white/50"}`} // Highlights active tab
-              onClick={() => goToSlide(index)} // Switches cocktail when clicked
-            >
+            <button key={cocktail.id} className={`${isActive ? "text-white border-white" : "text-white/50 border-white/50"}`} onClick={() => goToSlide(index)}>
               {cocktail.name}
             </button>
           );
