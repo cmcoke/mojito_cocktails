@@ -37,7 +37,7 @@ const Navbar = () => {
        */
       {
         backgroundColor: "#00000050", // Applies a semi-transparent black background
-        backgroundFilter: "blur(10px)", // Adds a subtle blur effect to the background
+        backdropFilter: "blur(10px)", // Adds a subtle blur effect to the background
         duration: 1, // Duration of the animation in seconds
         ease: "power1.inOut" // Smooth easing for both the start and end of the transition
       }
